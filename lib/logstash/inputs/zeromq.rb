@@ -16,7 +16,8 @@ class LogStash::Inputs::ZeroMQ < LogStash::Inputs::Base
   config_name "zeromq"
 
   default :codec, "json"
-
+  milestone 2
+  
   # 0mq socket address to connect or bind
   # Please note that `inproc://` will not work with logstash
   # as each we use a context per thread.
